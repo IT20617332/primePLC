@@ -1,24 +1,23 @@
-import './App.css';
+import "./App.css";
 import { BrowserRouter as BRouter, Switch, Route } from "react-router-dom";
-import Supliers from './components/Supliers';
-import Product from './components/Product';
-import Projectmorders from './components/Projectmorders';
-import Header from './components/Header';
-import Main from './components/Main';
-import Accounting from './components/Accounting';
-import Manager from './components/Manager';
-import Productview from './components/Productview';
-import Activities from './components/Activities';
-import Profile from './components/Profile';
-import AccountingProfileview from './components/AccountingProfileview';
-import ManagementProfileview from './components/ManagementProfileview';
+import Supliers from "./components/Supliers";
+import Product from "./components/Product";
+import Projectmorders from "./components/Projectmorders";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Accounting from "./components/Accounting";
+import Manager from "./components/Manager";
+import Productview from "./components/Productview";
+import Activities from "./components/Activities";
+import Profile from "./components/Profile";
+import AccountingProfileview from "./components/AccountingProfileview";
+import ManagementProfileview from "./components/ManagementProfileview";
 
+// all functions implemented
 const App = () => {
   return (
     <BRouter>
       <main className="page-body-content">
-      
-      
         <Switch>
           <Route exact path="/supplier" component={Supliers} />
         </Switch>
@@ -31,7 +30,6 @@ const App = () => {
         <Switch>
           <Route exact path="/add" component={Product} />
         </Switch>
-
         <Switch>
           <Route exact path="/manager" component={Projectmorders} />
         </Switch>
@@ -52,10 +50,12 @@ const App = () => {
         </Switch>
         <Switch>
           <Route exact path="/paccountinh" component={AccountingProfileview} />
-        </Switch> <Switch>
+        </Switch>{" "}
+        <Switch>
           <Route exact path="/pmanagement" component={ManagementProfileview} />
         </Switch>
-        </main>
-      </BRouter>
-  );};
-      export default App;
+      </main>
+    </BRouter>
+  );
+};
+export default App;

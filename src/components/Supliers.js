@@ -63,6 +63,7 @@ const Supliers = () => {
                 <h3 data-testid="supheading">Suppliers:</h3>
               </div>
               <div style={{ paddingLeft: "7vh", paddingTop: "5vh" }}>
+                {/* supplier details retrieve */}
                 <Table striped bordered hover style={{ border: "black" }}>
                   <thead>
                     <tr>
@@ -73,6 +74,7 @@ const Supliers = () => {
                     </tr>
                   </thead>
                   <tbody>
+                    {/* mapping data from supplier table */}
                     {Object.keys(suplierObjects).map((id) => {
                       return (
                         <tr key={id}>

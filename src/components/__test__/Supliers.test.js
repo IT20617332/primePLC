@@ -1,12 +1,10 @@
 import React from "react";
 import Supliers from "../Supliers";
-import {render,fireEvent} from "@testing-library/react";
-import "@testing-library/jest-dom/extend-expect"
+import { render, fireEvent } from "@testing-library/react";
+import "@testing-library/jest-dom/extend-expect";
 
-test(" Suplier header test",()=>{
-    const {getByTestId}=render(<Supliers/>);
-    const supheader=getByTestId("supheading");
-    expect(supheader.textContent).toBe(" Suppliers:")
-
- })
-
+test(" Suplier header test", () => {
+  const { getByTestId } = render(<Supliers />);
+  const supheader = getByTestId("supheading");
+  expect(supheader.textContent).toBe(" Suppliers:");
+});
